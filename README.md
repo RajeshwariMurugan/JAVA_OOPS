@@ -335,11 +335,13 @@ public class Main {
 
 ---
 
+
 ## 📘 Additional Notes
 
 ### 🔹 Class and Object
 
 **Class** → A class is the building block of OOP. It is a user-defined datatype that holds its own **data members** and **member functions**.
+
 **Object** → An object is an **instance of a class**. Memory is allocated only when the object is created.
 
 ---
@@ -349,25 +351,94 @@ public class Main {
 **Definition**:
 Constructors are **special methods** automatically invoked when an object is created.
 
-Types of constructors:
+**Types of constructors:**
 
 1. **Default Constructor** → No arguments, initializes default values.
 2. **Parameterized Constructor** → Takes arguments to initialize object with custom values.
 3. **Copy Constructor** → Creates a new object as a copy of an existing one.
 
-**Characteristics of Constructors**:
+**Characteristics of Constructors:**
 
 * Same name as the class.
 * No return type.
 * Called automatically at object creation.
 * Must be `public`.
 * Can be **overloaded**.
-* Cannot be `virtual` (in Java all methods are virtual except `final`, `static`, and `private`).
+* Cannot be `virtual` (in Java, methods are virtual by default except `final`, `static`, and `private`).
 
 ---
 
+### 🔹 Encapsulation
+
+**Definition**:
+Encapsulation is the process of **wrapping data (variables) and methods (functions) together** in a single unit called a class.
+
+**Key Points:**
+
+* Achieved using **access modifiers** (`private`, `protected`, `public`).
+* Provides **data hiding** and **security**.
+* Access to private fields is controlled using **getters** and **setters**.
+
+---
+
+### 🔹 Inheritance
+
+**Definition**:
+Inheritance is the mechanism of **acquiring properties and behaviors** of another class.
+
+**Key Points:**
+
+* Promotes **code reusability**.
+* Achieved using the `extends` keyword.
+* Types in Java:
+
+  * **Single** (one parent, one child)
+  * **Multilevel** (grandparent → parent → child)
+  * **Hierarchical** (one parent, multiple children)
+  * **Multiple inheritance** is not supported with classes, but can be achieved using **interfaces**.
+
+---
+
+### 🔹 Polymorphism
+
+**Definition**:
+Polymorphism means **one name, many forms**.
+
+**Types:**
+
+1. **Compile-time Polymorphism (Method Overloading)** → Same method name but different parameter lists.
+2. **Runtime Polymorphism (Method Overriding)** → Child class provides a specific implementation of a parent class method.
+
+---
+
+### 🔹 Abstraction
+
+**Definition**:
+Abstraction is the process of **hiding implementation details** and showing only the **essential features**.
+
+**Key Points:**
+
+* Achieved using **abstract classes** and **interfaces**.
+* Abstract classes can have both **abstract methods** (without body) and **concrete methods**.
+* Helps reduce complexity and improves security.
+
+---
+
+### 🔹 Interface
+
+**Definition**:
+An **interface** in Java is a collection of **abstract methods** (methods without implementation). It is used to achieve **100% abstraction** and **multiple inheritance**.
+
+**Key Points:**
+
+* Declared using the `interface` keyword.
+* A class implements an interface using `implements`.
+* All methods inside an interface are **public** and **abstract** by default.
+* Variables inside an interface are **public, static, and final**.
+* A class can implement multiple interfaces.
+
+---
+
+
 ## ✅ Thanks for Reading 🙌
 
-
-
-Do you want me to also create **a UML diagram (class diagram)** for the `BankAccount` real-life example and add it to `assets/images/` so your README looks more like an interview-ready guide?
