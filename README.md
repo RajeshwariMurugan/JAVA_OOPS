@@ -1,4 +1,5 @@
 
+---
 
 # Object Oriented Programming Notes - Last Minute Revision ✅
 
@@ -16,7 +17,7 @@ Objects combine **data (fields)** and **behavior (methods)**, making code **modu
 
 ## 🏛 The Four Pillars of OOP
 
-<img src="assets/images/pillars.png" width="600" alt="OOP Pillars" />
+<img src="assets/images/pillar_of_OOPS.png" width="600" alt="OOP Pillars" />
 
 1. **Encapsulation** → Binding data & methods together
 2. **Inheritance** → Acquiring properties of another class
@@ -323,8 +324,6 @@ public class Main {
 * **Abstraction** → `withdraw()` is abstract in parent class
 * **Polymorphism** → `withdraw()` works differently depending on account type
 
-<img src="assets/images/bank_system.png" width="600" alt="Bank System OOP Example" />
-
 ---
 
 ## 🎯 Access Modifiers in Java
@@ -336,13 +335,39 @@ public class Main {
 
 ---
 
-## ✅ Thanks for Reading
+## 📘 Additional Notes
 
-<img src="assets/images/save.png" width="600" alt="Thanks" />
+### 🔹 Class and Object
 
-🔥 Revise these concepts quickly before interviews!
+**Class** → A class is the building block of OOP. It is a user-defined datatype that holds its own **data members** and **member functions**.
+**Object** → An object is an **instance of a class**. Memory is allocated only when the object is created.
 
 ---
 
-Do you want me to also **make & provide simple UML diagrams (class diagrams)** for the `BankAccount` real-life example so the README looks more like an interview prep guide?
+### 🔹 Constructor
+
+**Definition**:
+Constructors are **special methods** automatically invoked when an object is created.
+
+Types of constructors:
+
+1. **Default Constructor** → No arguments, initializes default values.
+2. **Parameterized Constructor** → Takes arguments to initialize object with custom values.
+3. **Copy Constructor** → Creates a new object as a copy of an existing one.
+
+**Characteristics of Constructors**:
+
+* Same name as the class.
+* No return type.
+* Called automatically at object creation.
+* Must be `public`.
+* Can be **overloaded**.
+* Cannot be `virtual` (in Java all methods are virtual except `final`, `static`, and `private`).
+
 ---
+
+## ✅ Thanks for Reading 🙌
+
+
+
+Do you want me to also create **a UML diagram (class diagram)** for the `BankAccount` real-life example and add it to `assets/images/` so your README looks more like an interview-ready guide?
